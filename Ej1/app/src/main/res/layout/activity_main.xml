@@ -18,7 +18,8 @@
         android:layout_centerHorizontal="true"
         android:text="Contador"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        />
 
     <TextView
         android:id="@+id/contador"

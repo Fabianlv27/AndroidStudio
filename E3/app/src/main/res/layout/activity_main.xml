@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo3"
+        android:layout_width="305dp"
+        android:layout_height="57dp"
+
+        android:layout_marginTop="52dp"
+        android:background="@drawable/textview_border"
+        android:padding="10dp"
+        android:text="Grados Kelvin"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tgf" />
+
+    <EditText
+        android:id="@+id/tgk"
+        android:layout_width="125dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="273.15"
+        app:layout_constraintEnd_toStartOf="@+id/bdk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bak"
+        app:layout_constraintTop_toBottomOf="@+id/titulo3" />
+
+    <Button
+        android:id="@+id/bdk"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="52dp"
+        android:onClick="decrementarKelvin"
+        android:text="-1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tgk"
+        app:layout_constraintTop_toBottomOf="@+id/titulo3" />
+
+    <Button
+        android:id="@+id/bak"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="52dp"
+        android:onClick="incrementarKelvin"
+        android:text="+1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo3"
+        app:layout_constraintEnd_toStartOf="@+id/tgk" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="305dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/textview_border"
+
+        android:padding="10dp"
+        android:text="Grados Centigrados"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="305dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="108dp"
+
+        android:background="@drawable/textview_border"
+        android:padding="10dp"
+        android:text="Grados Fahrenheit"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tgc" />
+
+    <Button
+        android:id="@+id/bdc"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="52dp"
+        android:onClick="decrementarCentigrados"
+        android:text="-1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tgc"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <Button
+        android:id="@+id/bac"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="52dp"
+        android:onClick="incrementarCentigrados"
+        android:text="+1"
+        app:layout_constraintEnd_toStartOf="@+id/tgc"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <EditText
+        android:id="@+id/tgc"
+        android:layout_width="125dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/bac"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bdc"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+
+    <EditText
+        android:id="@+id/tgf"
+        android:layout_width="125dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="32"
+        app:layout_constraintEnd_toStartOf="@+id/bdf"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/baf"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2" />
+
+    <Button
+        android:id="@+id/bdf"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="52dp"
+        android:onClick="decrementarFar"
+        android:text="-1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tgf"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2" />
+
+    <Button
+        android:id="@+id/baf"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="52dp"
+        android:onClick="incrementarFar"
+        android:text="+1"
+        app:layout_constraintEnd_toStartOf="@+id/tgf"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
