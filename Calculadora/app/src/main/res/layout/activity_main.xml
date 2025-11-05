@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+
+        android:id="@+id/uno"
+        style="@style/botonDigitos"
+        android:layout_marginTop="42dp"
+        android:onClick="pulsarDigito"
+        android:text="@string/uno"
+        app:layout_constraintEnd_toStartOf="@+id/DOS"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuatro"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/DOS"
+        style="@style/botonDigitos"
+        android:onClick="pulsarDigito"
+        android:text="@string/dos"
+        app:layout_constraintEnd_toStartOf="@+id/tres"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/uno"
+        app:layout_constraintTop_toTopOf="@+id/uno"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/tres"
+        style="@style/botonDigitos"
+        android:onClick="pulsarDigito"
+        android:text="@string/tres"
+        app:layout_constraintEnd_toStartOf="@+id/sumar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/DOS"
+        app:layout_constraintTop_toTopOf="@+id/DOS"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <TextView
+        android:id="@+id/pantalla"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="#B44A4A"
+        android:hint="0."
+        android:text="0."
+        android:textAlignment="viewEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+
+        android:id="@+id/ocho"
+        style="@style/botonDigitos"
+        android:layout_marginTop="41dp"
+        android:onClick="pulsarDigito"
+        android:text="@string/ocho"
+        app:layout_constraintEnd_toStartOf="@+id/nueve"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/siete"
+        app:layout_constraintTop_toBottomOf="@+id/pantalla"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/nueve"
+        style="@style/botonDigitos"
+        android:layout_marginTop="41dp"
+        android:onClick="pulsarDigito"
+        android:text="@string/nueve"
+        app:layout_constraintEnd_toStartOf="@+id/borrar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ocho"
+        app:layout_constraintTop_toBottomOf="@+id/pantalla"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/siete"
+        style="@style/botonDigitos"
+        android:layout_marginTop="41dp"
+        android:onClick="pulsarDigito"
+        android:text="@string/siete"
+        app:layout_constraintEnd_toStartOf="@+id/ocho"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pantalla"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/cuatro"
+        style="@style/botonDigitos"
+        android:layout_marginTop="42dp"
+        android:onClick="pulsarDigito"
+        android:text="@string/cuatro"
+        app:layout_constraintEnd_toStartOf="@+id/cinco"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siete"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/cinco"
+        style="@style/botonDigitos"
+        android:layout_marginTop="42dp"
+        android:onClick="pulsarDigito"
+        android:text="@string/cinco"
+        app:layout_constraintEnd_toStartOf="@+id/seis"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cuatro"
+        app:layout_constraintTop_toBottomOf="@+id/ocho"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/seis"
+        style="@style/botonDigitos"
+
+        android:layout_marginTop="42dp"
+        android:onClick="pulsarDigito"
+        android:text="@string/seis"
+        app:layout_constraintEnd_toStartOf="@+id/dividir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cinco"
+        app:layout_constraintTop_toBottomOf="@+id/nueve"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/dividir"
+        style="@style/botonOperadores"
+        android:layout_marginTop="42dp"
+        android:onClick="Operacion"
+        android:text="@string/dividir"
+        app:layout_constraintEnd_toStartOf="@+id/restar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/seis"
+        app:layout_constraintTop_toBottomOf="@+id/borrar"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/multiplicar"
+        style="@style/botonOperadores"
+        android:onClick="Operacion"
+        android:text="@string/multiplicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sumar"
+        app:layout_constraintTop_toTopOf="@+id/sumar"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/restar"
+        style="@style/botonOperadores"
+        android:layout_marginTop="42dp"
+        android:onClick="Operacion"
+        android:text="@string/restar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dividir"
+        app:layout_constraintTop_toBottomOf="@+id/vaciar"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/sumar"
+        style="@style/botonOperadores"
+        android:onClick="Operacion"
+        android:text="@string/sumar"
+        app:layout_constraintEnd_toStartOf="@+id/multiplicar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tres"
+        app:layout_constraintTop_toTopOf="@+id/tres"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/igual"
+        style="@style/botonOperadores"
+        android:onClick="Operacion"
+        android:text="@string/resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/porcentaje2"
+        app:layout_constraintTop_toTopOf="@+id/porcentaje2"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/porcentaje2"
+        style="@style/botonOperadores"
+        android:onClick="TantoPorciento"
+        android:text="@string/porcentaje"
+        app:layout_constraintEnd_toStartOf="@+id/igual"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/punto"
+        app:layout_constraintTop_toTopOf="@+id/punto"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/cero"
+        style="@style/botonCero"
+        android:layout_marginTop="42dp"
+        android:onClick="pulsarDigito"
+        android:text="@string/cero"
+        app:layout_constraintEnd_toStartOf="@+id/punto"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uno"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/punto"
+        style="@style/botonOperadores"
+        android:onClick="PuntoDec"
+        android:text="@string/punto"
+        app:layout_constraintEnd_toStartOf="@+id/porcentaje2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cero"
+        app:layout_constraintTop_toTopOf="@+id/cero"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"></Button>
+
+    <Button
+
+        android:id="@+id/vaciar"
+        style="@style/botonOperadores"
+
+        android:layout_width="67dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="41dp"
+        android:onClick="Iniciar"
+        android:text="@string/vaciar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/borrar"
+        app:layout_constraintTop_toBottomOf="@+id/pantalla"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+
+        android:id="@+id/borrar"
+        style="@style/botonOperadores"
+        android:layout_marginTop="41dp"
+        android:onClick="BorrarEntrada"
+        android:text="@string/borrar"
+        app:layout_constraintEnd_toStartOf="@+id/vaciar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/nueve"
+        app:layout_constraintTop_toBottomOf="@+id/pantalla"
+        app:layout_editor_absoluteX="33dp"
+        app:layout_editor_absoluteY="146dp"
+        tools:ignore="MissingConstraints"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
