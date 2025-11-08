@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- ===== FILA 1: Encabezado ===== -->
+    <TextView
+        android:id="@+id/empty_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/header_dolar"
+        android:text="Dólar"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/empty_header"
+        app:layout_constraintStart_toEndOf="@id/empty_header"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/header_euro"
+        android:layout_width="0dp"
+        android:text="Euro"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/header_dolar"
+        app:layout_constraintStart_toEndOf="@id/header_dolar"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/header_yen"
+        android:text="Yen"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/header_euro"
+        app:layout_constraintStart_toEndOf="@id/header_euro"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/header_libra"
+        android:text="Libra"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/header_yen"
+        app:layout_constraintStart_toEndOf="@id/header_yen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <!-- ===== FILA 2: DÓLAR ===== -->
+    <TextView
+        android:id="@+id/row_dolar"
+        android:text="Dólar"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/empty_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/eq_0_0"
+        android:hint="1.00"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/row_dolar"
+        app:layout_constraintStart_toEndOf="@id/row_dolar"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_0_1"
+        android:hint="€"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_0_0"
+        app:layout_constraintStart_toEndOf="@id/eq_0_0"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_0_2"
+        android:hint="¥"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_0_1"
+        app:layout_constraintStart_toEndOf="@id/eq_0_1"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_0_3"
+        android:hint="£"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_0_2"
+        app:layout_constraintStart_toEndOf="@id/eq_0_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <!-- ===== FILA 3: EURO ===== -->
+    <TextView
+        android:id="@+id/row_euro"
+        android:text="Euro"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/row_dolar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/eq_1_0"
+        android:hint="$"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/row_euro"
+        app:layout_constraintStart_toEndOf="@id/row_euro"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_1_1"
+        android:hint="1.00"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_1_0"
+        app:layout_constraintStart_toEndOf="@id/eq_1_0"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_1_2"
+        android:hint="¥"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_1_1"
+        app:layout_constraintStart_toEndOf="@id/eq_1_1"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_1_3"
+        android:hint="£"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_1_2"
+        app:layout_constraintStart_toEndOf="@id/eq_1_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <!-- ===== FILA 4: YEN ===== -->
+    <TextView
+        android:id="@+id/row_yen"
+        android:text="Yen"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/row_euro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/eq_2_0"
+        android:hint="$"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/row_yen"
+        app:layout_constraintStart_toEndOf="@id/row_yen"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_2_1"
+        android:hint="€"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_2_0"
+        app:layout_constraintStart_toEndOf="@id/eq_2_0"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_2_2"
+        android:hint="1.00"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_2_1"
+        app:layout_constraintStart_toEndOf="@id/eq_2_1"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_2_3"
+        android:hint="£"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_2_2"
+        app:layout_constraintStart_toEndOf="@id/eq_2_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <!-- ===== FILA 5: LIBRA ===== -->
+    <TextView
+        android:id="@+id/row_libra"
+        android:text="Libra"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/row_yen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/eq_3_0"
+        android:hint="$"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/row_libra"
+        app:layout_constraintStart_toEndOf="@id/row_libra"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_3_1"
+        android:hint="€"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_3_0"
+        app:layout_constraintStart_toEndOf="@id/eq_3_0"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_3_2"
+        android:hint="¥"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_3_1"
+        app:layout_constraintStart_toEndOf="@id/eq_3_1"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/eq_3_3"
+        android:hint="1.00"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/eq_3_2"
+        app:layout_constraintStart_toEndOf="@id/eq_3_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
