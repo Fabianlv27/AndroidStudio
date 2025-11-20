@@ -5,13 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
 
     <TextView
         android:id="@+id/titulo3"
         android:layout_width="305dp"
         android:layout_height="57dp"
-
         android:layout_marginTop="52dp"
         android:background="@drawable/textview_border"
         android:padding="10dp"
