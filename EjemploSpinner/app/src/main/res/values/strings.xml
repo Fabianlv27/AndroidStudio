@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EjemploSpinner</string>
+    <string-array name="operaciones">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+        <item>/</item>
+    </string-array>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EjemploSpinner</string>
+    <string-array name="operaciones">
+        <item>Addition</item>
+        <item>Subtraktion</item>
+        <item>Multiplikation</item>
+        <item>Division</item>
+    </string-array>
+</resources>
