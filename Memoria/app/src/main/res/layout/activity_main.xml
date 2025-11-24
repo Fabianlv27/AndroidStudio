@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tabla"
+        android:layout_width="245dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="157dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i_0"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i_8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_10"
+                android:layout_width="62dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i_12"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/i_15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:maxHeight="20px"
+                android:minHeight="20px"
+                app:srcCompat="@drawable/logo" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/contador"
+        android:layout_width="75dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="168dp"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabla" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="165dp"
+        android:onClick="inicio"
+        android:text="reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contador" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
